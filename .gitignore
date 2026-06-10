@@ -1,0 +1,15 @@
+__pycache__/
+AssetOpsBench/
+mcp-bench/
+evaluation_notebook/
+results/
+log/
+datasets/
+configs/
+api_key
+.env
+test.txt
+things_to_work_on.txt
+run_python.py
+run_original.sh
+
