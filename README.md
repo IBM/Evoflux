@@ -116,11 +116,10 @@ Training config is in [configs/fsdp_config.yaml](configs/fsdp_config.yaml).
 ## Key flags
 
 **Search:**
-- `--B 15` — evolution budget (iterations per query)
-- `--K 15` — max population size
-- `--max-steps 25` — max tool calls per execution
+- `--B 5` — evolution budget (iterations per query)
+- `--K 10` — max population size
+- `--max-steps 15` — max tool calls per execution
 - `--seed 0`
 
 **ReAct:**
-- `--react-max-steps 25`
-- `--react-max-tokens 3096`
+- `--react-max-steps 15`
