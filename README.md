@@ -1,6 +1,6 @@
-# EvoFlowSearch
+# Evoflux
 
-Code for the paper **"EvoFlowSearch: Execution-Grounded Workflow Search for Compact Tool-Using Agents"**.
+Code for the paper **"Evoflux: Inference-Time Evolution of Executable Tool Workflows for Compact Agents"**.
 
 We frame agentic tool-use as search over a graph of typed tool calls. A planner LLM generates a workflow graph for each query, and an evolutionary loop mutates + scores candidates to find better ones. Evaluation runs on [MCP-Bench](https://github.com/accenture/mcp-bench).
 
@@ -67,8 +67,8 @@ PYTHONPATH=. python3 -m scripts.run_pipeline \
 
 ```bash
 # local vLLM
-STAGES=search   bash ./run.sh local "Qwen/Qwen2.5-7B-Instruct" "openai/gpt-4o-mini"
-STAGES=validate bash ./run.sh local "Qwen/Qwen2.5-7B-Instruct" "openai/gpt-4o-mini"
+STAGES=search   bash ./run.sh local "Qwen/Qwen2.5-7B-Instruct" "openai/gpt-oss-20b"
+STAGES=validate bash ./run.sh local "Qwen/Qwen2.5-7B-Instruct" "openai/gpt-oss-20b"
 
 # OpenRouter
 bash ./run.sh openrouter
@@ -80,8 +80,8 @@ bash ./run.sh bedrock
 For fine-tuned checkpoints, set `MODEL_VERSION`:
 
 ```bash
-MODEL_VERSION=sft     STAGES=validate bash ./run.sh local "Qwen/Qwen2.5-7B-Instruct" "openai/gpt-4o-mini"
-MODEL_VERSION=sft+dpo STAGES=validate bash ./run.sh local "Qwen/Qwen2.5-7B-Instruct" "openai/gpt-4o-mini"
+MODEL_VERSION=sft     STAGES=validate bash ./run.sh local "Qwen/Qwen2.5-7B-Instruct" "openai/gpt-oss-20b"
+MODEL_VERSION=sft+dpo STAGES=validate bash ./run.sh local "Qwen/Qwen2.5-7B-Instruct" "openai/gpt-oss-20b"
 ```
 
 Results land in `results/{MODEL_VERSION}/`. Logs go to `log/`.
