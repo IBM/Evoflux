@@ -123,3 +123,16 @@ Training config is in [configs/fsdp_config.yaml](configs/fsdp_config.yaml).
 
 **ReAct:**
 - `--react-max-steps 15`
+
+## Citation
+```
+@misc{bhandari2026evofluxinferencetimeevolutionexecutable,
+      title={Evoflux: Inference-Time Evolution of Executable Tool Workflows for Compact Agents}, 
+      author={Kushal Raj Bhandari and Ling Yue and Ching-Yun Ko and Dhaval Patel and Shaowu Pan and Pin-Yu Chen and Jianxi Gao},
+      year={2026},
+      eprint={2606.12674},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2606.12674}, 
+}
+```
